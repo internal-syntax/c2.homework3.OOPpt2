@@ -1,4 +1,4 @@
-public class Vehicles {
+public abstract class Vehicles {
     private String modelName;
     private int wheelsCount;
 
@@ -6,6 +6,8 @@ public class Vehicles {
         this.modelName = modelName;
         this.wheelsCount = wheelsCount;
     }
+
+    public abstract void check();
 
     public String getModelName() {
         return modelName;
@@ -22,4 +24,5 @@ public class Vehicles {
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
     }
+
 }

@@ -7,12 +7,13 @@ public class Main {
         Vehicles truck = new Truck("truck1", 6);
         Vehicles truck2 = new Truck("truck2", 8);
 
+
         ServiceStation station = new ServiceStation();
-        station.check((Car) car, null, null);
-        station.check((Car) car2, null, null);
-        station.check(null, (Bicycle) bicycle, null);
-        station.check(null, (Bicycle) bicycle2, null);
-        station.check(null, null, (Truck) truck);
-        station.check(null, null, (Truck) truck2);
+        station.checkVehicle(bicycle);
+        station.checkVehicle(bicycle2);
+        station.checkVehicle(car);
+        station.checkVehicle(car2);
+        station.checkVehicle(truck);
+        station.checkVehicle(truck2);
     }
 }

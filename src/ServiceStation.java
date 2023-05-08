@@ -3,7 +3,7 @@ public class ServiceStation {
     public void check(Bicycle bicycle) {
         System.out.println("Обслуживаем " + bicycle.getModelName());
         for (int i = 0; i < bicycle.getWheelsCount(); i++) {
-            System.out.println("Меняем покрышку");
+            bicycle.updateTyre();
         }
         System.out.println("______________________________________");
     }
@@ -11,19 +11,19 @@ public class ServiceStation {
     public void check(Car car) {
         System.out.println("Обслуживаем " + car.getModelName());
         for (int i = 0; i < car.getWheelsCount(); i++) {
-            System.out.println("Меняем покрышку");
+            car.updateTyre();
         }
-        System.out.println("Проверяем двигатель");
+        car.checkEngine();
         System.out.println("______________________________________");
     }
 
     public void check(Truck truck) {
         System.out.println("Обслуживаем " + truck.getModelName());
         for (int i = 0; i < truck.getWheelsCount(); i++) {
-            System.out.println("Меняем покрышку");
+            truck.updateTyre();
         }
-        System.out.println("Проверяем двигатель");
-        System.out.println("Проверяем прицеп");
+        truck.checkEngine();
+        truck.checkTrailer();
         System.out.println("______________________________________");
     }
 }

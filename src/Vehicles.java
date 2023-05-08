@@ -7,6 +7,10 @@ public class Vehicles {
         this.wheelsCount = wheelsCount;
     }
 
+    public void updateTyre() {
+        System.out.println("Меняем покрышку");
+    }
+
     public String getModelName() {
         return modelName;
     }
